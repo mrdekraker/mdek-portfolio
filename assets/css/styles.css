@@ -1,155 +1,119 @@
-:root {
-  --primary: #5d5c61;
-  --secondary: #938e94;
-  --third: #7395ae;
-  --fourth: #557a95;
-  --fifth: #b1a296;
-
-  --links: white;
-}
-
+/* DOCUMENT STYLES */
 * {
-  box-sizing: border-box;
-  margin: 0;
+  box-sizing: inherit;
   padding: 0;
+  margin: 0;
 }
 
 body {
-  font-family: "PT Serif", "Times New Roman", Times, serif;
-}
-
-a {
-  color: white;
-  letter-spacing: 2px;
-  text-decoration: none;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  padding: 15px 5px;
-}
-
-/* NAVIGATION STYLING */
-header {
-  background: var(--primary);
-  color: var(--secondary);
+  font-family: "Playfair Display", serif;
 }
 
 .wrapper {
+  border: 0.2rem solid green;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 20px;
-  /* border: 5px solid red; */
+  padding: 20px 10px;
 }
 
-/* NAMEPLATE */
-.wrapper h1 a {
-  margin: auto 0;
-  font-size: 45px;
-  color: black;
-  /* justify-content: center; */
+.nameplate {
+  border-right: 2px solid black;
+  width: 200px;
+  text-align: right;
+  margin-right: 20px;
+  padding-right: 5px;
 }
 
-/* LINKS */
+/* HEADER/NAVIGATION STYLES */
 nav {
   margin: auto 0;
 }
-nav ul {
-  margin: 0;
-  padding: 0;
+
+.header-nameplate {
+  font-size: 40px;
+  margin: auto 0;
+  padding-left: 60px;
+  flex: 1;
+}
+
+.flex-nav ul {
   display: flex;
-  flex-wrap: wrap;
+  flex: 1;
+  border: 1px solid black;
   list-style: none;
-  font-size: 20px;
 }
 
-nav ul a {
-  color: white;
+.flex-nav ul li {
+  display: flex;
+}
+.flex-nav a {
+  flex: 1;
+  color: black;
   background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 5px;
+  letter-spacing: 1.3px;
+  /* margin: auto 0; */
 }
 
-nav ul a:hover {
-  transition: 0.5s;
+.flex-nav a:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* HERO STYLING */
-.hero {
-  height: 150px;
-  display: flex;
-  flex-direction: column-reverse;
-  border: 5px solid magenta;
-  background: url("https:picsum.photos/1000");
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.hero p {
-  border: 5px solid orange;
-  font-size: 24px;
-  padding: 5px 15px;
-  margin: 0 35px 15px auto;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-/* ABOUT ME STYLING */
+/* ABOUT ME STYLES */
 article {
-  padding: 5px 20px;
-  margin: 25px 0;
-  min-height: 150px;
   display: flex;
-  background: var(--secondary);
 }
 
-article p {
-  font-size: 18px;
-  line-height: 1.2;
+.bio-copy {
+  flex: 1;
+  border: 2px solid orange;
 }
 
-#leafs {
-  color: blue;
-}
-
-/* ABOUT ME NAMEPLATE */
-.about-me h1 {
-  text-align: right;
-  padding: 0 20px;
-  font-size: 48px;
-}
-
-.about-me-paragraphs {
-  padding: 0 20px;
-  border-left: 3px solid black;
-}
-
-/* FOOTER STYLING */
-footer {
-  bottom: 0;
-  width: 100%;
-  background-color: var(--primary);
-}
-footer ul {
-  margin: 0;
-  /* padding: 0 20px; */
+/* WORK  */
+.boxes {
+  border: 2px solid aquamarine;
+  padding: 20px;
   display: flex;
+  flex: 4;
   flex-wrap: wrap;
   list-style: none;
-  font-size: 18px;
+  justify-content: center;
 }
 
-footer ul li a {
-  /* border: 3px solid blue; */
-  /* border-bottom: 3px solid black; */
-  color: var(--links);
+.project1 {
+  flex: 80%;
+  border: 2px solid blue;
+  min-height: 500px;
+  min-width: 500px;
+  margin-bottom: 25px;
 }
 
-footer ul li a:hover {
-  color: var(--secondary);
+.project2,
+.project3,
+.project4,
+.project5 {
+  flex: 20%;
+  border: 2px solid blue;
+  min-height: 200px;
+  min-width: 200px;
 }
 
-/* FOOTER LABEL */
+/* CONTACT STYLES */
 footer h1 {
-  margin: auto 0;
-  padding-right: 10px;
-  border-right: 3px solid black;
+  font-size: 24px;
+}
+
+footer a {
+  font-size: 20px;
+}
+
+/* MEDIA QUERIES */
+@media all and (max-width: 1000px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
 }
