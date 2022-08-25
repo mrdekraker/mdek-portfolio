@@ -1,0 +1,142 @@
+/* DOCUMENT STYLES */
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+.wrapper {
+  border: 2px solid green;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  padding: 20px 10px;
+}
+
+.nameplate {
+  border-right: 2px solid black;
+  width: 200px;
+  text-align: right;
+  margin-right: 20px;
+  padding-right: 5px;
+  font-size: 28px;
+}
+
+/* HEADER/NAVIGATION STYLES */
+nav {
+  margin: auto 0;
+}
+
+.header-nameplate {
+  font-size: 40px;
+  margin: auto 0;
+  padding-left: 60px;
+  flex: 1;
+}
+
+.flex-nav ul {
+  display: flex;
+  border: 1px solid black;
+  list-style: none;
+}
+
+.flex-nav ul li {
+  display: flex;
+}
+.flex-nav a {
+  color: black;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  letter-spacing: 1.3px;
+}
+
+.flex-nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* HERO STYLES */
+.hero {
+  min-height: 200px;
+  justify-content: flex-end;
+}
+
+/* ABOUT ME STYLES */
+article {
+  display: flex;
+}
+
+.bio-copy {
+  flex: 1;
+  border: 2px solid orange;
+}
+
+/* WORK  */
+.boxes {
+  border: 2px solid aquamarine;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 auto;
+  height: 600px;
+  /* flex-direction: column-reverse; */
+}
+
+.box {
+  border: 2px solid plum;
+  flex: 1;
+  margin: 10px;
+}
+
+.box:hover {
+}
+
+.project1 {
+  border: 2px solid magenta;
+  flex: 2 1 400px;
+}
+
+.box-info {
+}
+/* CONTACT STYLES */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer h1 {
+  font-size: 48px;
+}
+
+.footer-links {
+  border: 2px solid indigo;
+  display: flex;
+  flex: 1;
+  list-style: none;
+  font-size: 28px;
+  letter-spacing: 1.3px;
+  margin: auto auto;
+  justify-content: space-around;
+  padding: 0 40px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* MEDIA QUERIES */
+/* @media all and (min-width: 800px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+} */
