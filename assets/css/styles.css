@@ -238,17 +238,24 @@ article {
   filter: opacity(1);
 }
 
-.project1 a {
+.project1 a,
+.project2 a {
   text-decoration: none;
   color: white;
 }
 
-.project1:hover a {
+.project1:hover a,
+.project2:hover a {
   text-decoration: underline;
   color: white;
 }
 
-.project2,
+.project2 {
+  background: url(../images/movieApp.png);
+  background-size: cover;
+  filter: opacity(0.5);
+}
+
 .project3,
 .project4,
 .project5 {
