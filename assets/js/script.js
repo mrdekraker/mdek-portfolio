@@ -1,47 +1,21 @@
 const workBtn = document.querySelector('.workBtn');
-const btn = document.querySelector('button');
 const arrow = document.querySelector('#arrow');
 const about = document.querySelector(`#about`);
 const gap = document.querySelector('#gap');
 const navbar = document.querySelector('.nav-container');
-// const home = document.querySelector(`#home`);
-const navLink = document.querySelectorAll('.nav-link');
+const stickyBtn = document.querySelector('.stickyBtn');
 
-// !NAVBAR CLICKS
-
-// when a user clicks on any of the nav links, it will scroll to the section
-// that is associated with that link
-function handleNavClick(e) {
-  e.preventDefault();
-  const { target } = e;
-  const id = target.getAttribute('href');
-  const section = document.querySelector(id);
-  section.scrollIntoView({ behavior: 'smooth' });
-}
-
+stickyBtn.addEventListener(`click`, () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  });
+});
 // !EVENT LISTENERS
-
-// when a user clicks on any of the nav links, it will scroll to the section
-// that is associated with that link
 function handleClick(e) {
-  console.log(e.target);
-  console.log('🐛 IT GOT CLICKED!!!');
   about.scrollIntoView({ behavior: 'smooth' });
 }
-
-function arrowMouseover() {
-  // console.log('🐛 IT GOT HOVERED!!!');
-  arrow.style.transform = 'scale(1.4)';
-}
-
-function arrowMouseout() {
-  // console.log('🐛 IT GOT UNHOVERED!!!');
-  arrow.style.transform = 'scale(1)';
-}
-
-// workBtn mouseover event
-workBtn.addEventListener('mouseover', arrowMouseover);
-workBtn.addEventListener(`mouseout`, arrowMouseout);
 workBtn.addEventListener(`click`, handleClick);
 
 // Navbar intersection observer
