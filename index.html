@@ -37,12 +37,13 @@
       </div>
     </header>
     <main id="main">
-      <nav id="nav">
+      <!-- !NAVBAR -->
+      <nav class="nav-container">
         <div class="container">
           <nav class="navbar navbar-expand justify-content-end">
             <ul class="nav navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" id="home" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
@@ -60,10 +61,24 @@
           </nav>
         </div>
       </nav>
+      <!-- !ABOUT -->
       <section id="about" class="container text-center align-middle">
         <div class="row">
-          <h2 class="namePlate">About</h2>
+          <h2 class="namePlate">ABOUT</h2>
         </div>
+        <div class="row container icon-section my-3">
+          <div class="col-md">
+            CLEAN CODE <br />
+            <span class="icons" id="code-slash">&#xF683;</span>
+          </div>
+          <div class="col-md">
+            LEARNING <br /><span class="icons" id="book">&#xF194;</span>
+          </div>
+          <div class="col-md">
+            LOGIC <br /><span class="icons" id="puzzle">&#xF503;</span>
+          </div>
+        </div>
+
         <div class="col-md-12 text-start mission">
           <p>
             const <span class="ethos">markDeKraker</span> = `I am a husband. I
@@ -90,17 +105,10 @@
             and my love of puzzles.
           </p>
         </div>
-        <div class="row container icon-section my-3">
-          <div class="col-md">
-            CLEAN CODE <br />
-            <span class="icons" id="code-slash">&#xF683;</span>
-          </div>
-          <div class="col-md">
-            LEARNING <br /><span class="icons" id="book">&#xF194;</span>
-          </div>
-          <div class="col-md">
-            LOGIC <br /><span class="icons" id="puzzle">&#xF503;</span>
-          </div>
+      </section>
+      <section id="portfolio" class="container text-center">
+        <div class="row">
+          <h3 class="namePlate">PORTFOLIO</h3>
         </div>
       </section>
     </main>
