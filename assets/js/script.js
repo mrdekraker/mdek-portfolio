@@ -4,6 +4,7 @@ const about = document.querySelector(`#about`);
 const gap = document.querySelector('#gap');
 const navbar = document.querySelector('.nav-container');
 const stickyBtn = document.querySelector('.stickyBtn');
+const panels = document.querySelectorAll('.panel');
 
 stickyBtn.addEventListener(`click`, () => {
   window.scrollTo({
@@ -54,3 +55,19 @@ document.querySelectorAll(`.fade-up`).forEach((element) => {
 });
 
 navObs.observe(navbar);
+
+// !PANELS
+function toggleOpen() {
+  this.classList.toggle('open');
+}
+
+function toggleActive(e) {
+  if (e.propertyName.includes('flex')) {
+    this.classList.toggle('open-active');
+  }
+}
+
+panels.forEach((panel) => panel.addEventListener('click', toggleOpen));
+panels.forEach((panel) =>
+  panel.addEventListener('transitionend', toggleActive)
+);
