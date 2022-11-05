@@ -74,17 +74,18 @@ body {
     rgba(255, 255, 255, 0.1) 0px 24px 80px;
 }
 
-.arrow {
+.icon {
+  /* font-size: 1.5rem; */
+  color: var(--accent);
+  width: 1.5em;
+  height: 1.5em;
   font-family: "Bootstrap-icons";
 }
 
-.icon {
+.icons {
+  font-family: "Bootstrap-icons";
   width: 1.5em;
   height: 1.5em;
-}
-
-.icon:hover {
-  transform: scale(1.2);
 }
 
 /* !NAVBAR STYLES */
@@ -101,7 +102,7 @@ body {
   font-size: 1.25rem;
 }
 
-/* ABOUT ME */
+/* !ABOUT ME */
 .namePlate {
   font-weight: bold;
   font-size: 3rem;
@@ -136,4 +137,17 @@ body {
 
 .me {
   font-size: 1.5em;
+}
+
+.icon-section {
+  color: var(--accent);
+  font-size: 2rem;
+}
+
+#code-slash,
+#book,
+#puzzle {
+  /* font-weight: bold; */
+  font-size: 3em;
+  color: var(--accent);
 }
