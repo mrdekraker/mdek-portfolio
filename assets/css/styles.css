@@ -1,10 +1,7 @@
-:root {
-  /* --background-color: #fffbf0;
-  
-  --accent-wall: #565656;
-  --links: #24f9f9;
-  --accent: #a1a7c8; */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
 
+:root {
   --background-color: #4f5263;
   --accent: #24f9f9;
   --links: #a1a7c8;
@@ -51,31 +48,27 @@ body {
 }
 
 .workBtn {
-  background-color: #f8f9fa;
-  /* border: 1px solid #f8f9fa; */
+  background-color: var(--background-color);
+  color: var(--accent);
   border: none;
-  border-radius: 4px;
-  color: #3c4043;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
-  font-size: 1.5rem;
-  height: 36px;
-  line-height: 27px;
-  min-width: 54px;
-  padding: 0 16px;
-  text-align: center;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: pre;
+  transition: all 0.3s ease-in-out;
 }
+
 .workBtn:hover {
-  border-color: #dadce0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px;
-  color: #202124;
+  background-color: var(--accent);
+  color: var(--background-color);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 8px 24px,
+    rgba(255, 255, 255, 0.1) 0px 16px 56px,
+    rgba(255, 255, 255, 0.1) 0px 24px 80px;
 }
-.workBtn:focus {
-  border-color: #4285f4;
-  outline: none;
+
+.arrow {
+  font-family: "Bootstrap-icons";
 }
 
 .icon {
@@ -89,8 +82,8 @@ body {
 
 /* !NAVBAR STYLES */
 #nav {
-  background-color: var(--accent-wall);
-  border-bottom: 2px solid aquamarine;
+  background-color: var(--background-color);
+  border-bottom: 2px solid var(--accent);
 }
 
 #nav a {
@@ -107,7 +100,7 @@ body {
   font-size: 3rem;
   text-decoration: underline;
   line-height: 1.5em;
-  padding-bottom: 1rem;
+  padding: 1rem;
   /* border: 2px solid red; */
 }
 
@@ -119,4 +112,25 @@ body {
   /* background: var(--background-color); */
   height: 100vh;
   width: 100%;
+}
+
+.mission {
+  font-family: "Caveat", cursive, Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  justify-content: center;
+  padding: 1rem;
+  border-left: 2px solid var(--accent);
+  /* border: 2px solid red; */
+}
+
+.ethos {
+  color: var(--accent);
+}
+
+.indent {
+  text-indent: 50px;
+}
+
+.indent1 {
+  text-indent: 100px;
 }

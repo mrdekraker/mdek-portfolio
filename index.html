@@ -15,6 +15,10 @@
     <!-- MY CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Mark DeKraker | Full Stack</title>
+    <link
+      rel="icon"
+      href="./assets/images/journal-code.svg"
+      type="image/icon type" />
   </head>
 
   <body>
@@ -26,7 +30,9 @@
             <span class="mdek"><strong>Mark DeKraker</strong></span
             >. <br />I am a Full-Stack Web Developer.
           </p>
-          <button class="workBtn" role="button">View My Work</button>
+          <button class="workBtn" role="button" aria-label="Work Button">
+            View My Work <span class="arrow">&#xF128;</span>
+          </button>
         </div>
       </div>
     </header>
@@ -54,16 +60,17 @@
           </nav>
         </div>
       </nav>
-      <section class="container text-center" id="about">
+      <section id="about" class="container text-center align-middle">
         <div class="row">
           <h2 class="namePlate">About</h2>
         </div>
-        <!-- row with 4 columns -->
-        <div class="row container-fluid icon-section">
-          <div class="col-md">Clean Code</div>
-          <div class="col-md">Icon 2</div>
-          <div class="col-md">Icon 3</div>
-          <div class="col-md">Icon 4</div>
+        <div class="row text-start mission">
+          <p>
+            function <span class="ethos">personalEthos</span>(virtue){
+              while(age += 1 < life.length) {
+                virtue.pathos; virtue.logos; virtue.ethos;}
+            </div>
+          </p>
         </div>
         <div class="col-md-9">
           <p>
@@ -88,6 +95,12 @@
             <strong>fast learner</strong> and
             <strong>self-motivated</strong> individual.
           </p>
+        </div>
+        <div class="row container-fluid icon-section">
+          <div class="col-md">Clean Code</div>
+          <div class="col-md">Icon 2</div>
+          <div class="col-md">Icon 3</div>
+          <div class="col-md">Icon 4</div>
         </div>
       </section>
     </main>
