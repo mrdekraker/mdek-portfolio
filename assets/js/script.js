@@ -4,14 +4,28 @@ const arrow = document.querySelector('#arrow');
 const about = document.querySelector(`#about`);
 const gap = document.querySelector('#gap');
 const navbar = document.querySelector('.nav-container');
-const home = document.querySelector(`#home`);
+// const home = document.querySelector(`#home`);
+const navLink = document.querySelectorAll('.nav-link');
 
+// !NAVBAR CLICKS
+
+// when a user clicks on any of the nav links, it will scroll to the section
+// that is associated with that link
+function handleNavClick(e) {
+  e.preventDefault();
+  const { target } = e;
+  const id = target.getAttribute('href');
+  const section = document.querySelector(id);
+  section.scrollIntoView({ behavior: 'smooth' });
+}
+
+// !EVENT LISTENERS
+
+// when a user clicks on any of the nav links, it will scroll to the section
+// that is associated with that link
 function handleClick(e) {
   console.log(e.target);
   console.log('🐛 IT GOT CLICKED!!!');
-  // when clicked, go to the next section
-  // 1. get the next section
-  // 2. scroll to it
   about.scrollIntoView({ behavior: 'smooth' });
 }
 
@@ -48,5 +62,21 @@ const navObs = new IntersectionObserver(
   },
   { threshold: 0.75 }
 );
+
+const fadeUpObs = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add(`faded`);
+        fadeUpObs.unobserve(entry.target);
+      }
+    });
+  },
+  { rootMargin: `0px 0px -100px 0px` }
+);
+
+document.querySelectorAll(`.fade-up`).forEach((element) => {
+  fadeUpObs.observe(element);
+});
 
 navObs.observe(navbar);

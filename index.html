@@ -23,7 +23,7 @@
 
   <body>
     <header>
-      <div class="landing">
+      <div class="landing" id="landing">
         <div class="hero">
           <p>
             Hi, My name is
@@ -43,30 +43,30 @@
           <nav class="navbar navbar-expand justify-content-end">
             <ul class="nav navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" id="home" href="index.html">Home</a>
+                <a class="nav-link" id="home" href="#landing">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#blog">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
         </div>
       </nav>
       <!-- !ABOUT -->
-      <section id="about" class="container text-center align-middle">
+      <section id="about" class="container text-center align-middle fade-up">
         <div class="row">
           <h2 class="namePlate">ABOUT</h2>
         </div>
-        <div class="row container icon-section my-3">
+        <div class="row container icon-section my-3 fade-up">
           <div class="col-md">
             CLEAN CODE <br />
             <span class="icons" id="code-slash">&#xF683;</span>
@@ -79,30 +79,49 @@
           </div>
         </div>
 
-        <div class="col-md-12 text-start mission">
+        <div class="col-md-12 text-start mission fade-up">
           <p>
             const <span class="ethos">markDeKraker</span> = `I am a husband. I
             am a father. I am a web developer. I am a musician.`<br />
             function <span class="ethos">personalEthos</span>(virtue){
-            while(markDeKraker.age += 1 < life.length) { virtue.ethos++;
-            virtue.pathos++; virtue.logos++;}
+            while(markDeKraker.age += 1 < life.length) { virtue.wisdom++;
+            virtue.love++; virtue.passion++;}
           </p>
         </div>
         <div class="col-md-12 my-3 me">
-          <p class="text-start">
-            I am a full stack web developer with a background in education,
-            management, and customer service. I have a lifelong love of music
-            and puzzles, and I have a passion for problem solving and creating,
-            and while I don't have a conventional background in comp sci, I have
-            a strong desire to learn and grow as a developer. I am a lifelong
-            learner and I am excited to be a part of the tech industry.
+          <p class="text-start fade-up">
+            My name is Mark DeKraker (De-Cray-Ker). I'm married to a beautiful
+            woman named Kayla, and we have a daughter together. I am a Canadian
+            (Go Leafs!🇨🇦 🍁 🏒 ) web developer who lives in Houston, TX. I am a
+            full stack web developer with a background in education, management,
+            and customer service. I have a lifelong love of music and puzzles,
+            and I have a passion for problem solving and creating. While I don't
+            have a conventional background in Comp Sci, I know I have the mental
+            fortitude that is required to learn and grow as a developer. I am a
+            lifelong learner and I am excited to be a part of the tech industry.
           </p>
           <div id="gap"></div>
-          <p class="text-start">
+          <p class="text-start fade-up">
             As a web developer, I have creative freedom to build and design apps
             and websites that are both functional and beautiful. As a developer,
             I also have the freedom to exercise my obsessive attention to detail
-            and my love of puzzles.
+            and my love of puzzles. I have discovered that the beautiful
+            amalgamation of puzzles, challenges, and design culminates in web
+            development.
+          </p>
+          <div id="gap"></div>
+          <p class="text-start fade-up">
+            I am currently enrolled at Rice University's Full Stack Web
+            Development program (projected graduation date February of 2023).
+            This website was built with everything I've learned from the course.
+            My experience with Rice University's bootcamp has been nothing short
+            of a challenging, rewarding experience.
+          </p>
+          <div id="gap"></div>
+          <p class="text-start fade-up">
+            I plan to continue updating this portfolio as I learn new techniques
+            and methodologies. Please feel free to contact me if you have any
+            questions. I would love to grow, learn, and collaborate with you.
           </p>
         </div>
       </section>
@@ -112,6 +131,11 @@
         </div>
       </section>
     </main>
+
+    <!-- sticky button -->
+    <div class="stickyBtn icon">
+      <a href="#landing" class="btn" role="button">&#xF115;</a>
+    </div>
     <footer>
       <!-- place footer here -->
     </footer>
