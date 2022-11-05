@@ -2,6 +2,7 @@ const workBtn = document.querySelector('.workBtn');
 const btn = document.querySelector('button');
 const arrow = document.querySelector('.arrow');
 const about = document.querySelector(`#about`);
+const gap = document.querySelector('#gap');
 
 function handleClick() {
   console.log('🐛 IT GOT CLICKED!!!');

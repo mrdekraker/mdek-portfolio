@@ -20,6 +20,13 @@ body {
   background-color: var(--background-color);
 }
 
+/* create spacer gap */
+#gap {
+  font-size: 0;
+  height: 10px;
+  line-height: 0;
+}
+
 .landing {
   height: 100vh;
   width: 100%;
@@ -109,14 +116,14 @@ body {
 }
 
 #about {
-  /* background: var(--background-color); */
+  background: var(--background-color);
   height: 100vh;
   width: 100%;
 }
 
 .mission {
   font-family: "Caveat", cursive, Arial, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 1.9em;
   justify-content: center;
   padding: 1rem;
   border-left: 2px solid var(--accent);
@@ -127,10 +134,6 @@ body {
   color: var(--accent);
 }
 
-.indent {
-  text-indent: 50px;
-}
-
-.indent1 {
-  text-indent: 100px;
+.me {
+  font-size: 1.5em;
 }
