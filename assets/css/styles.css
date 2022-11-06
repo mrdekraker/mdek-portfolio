@@ -169,10 +169,7 @@ body {
 #portfolio,
 #contact {
   background: var(--background-color);
-  /* height: 100vh; */
   width: 100%;
-  /* color: var(--text-color-black); */
-  /* border: 2px solid red; */
 }
 
 #portfolio p {
@@ -181,9 +178,9 @@ body {
 }
 
 #contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   font-size: 4rem;
   color: var(--accent);
 }
@@ -284,9 +281,9 @@ body {
   align-items: center;
 }
 
-/* .panel p:nth-child(2) {
+.panel p:nth-child(2) {
   font-size: 4em;
-} */
+}
 
 .panel > *:first-child {
   transform: translateY(-100%);
@@ -326,4 +323,11 @@ body {
 footer p a {
   color: var(--accent);
   text-decoration: none;
+}
+
+.contact-icons {
+  /* center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
