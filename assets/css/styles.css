@@ -127,6 +127,14 @@ nav {
   font-size: 1.5rem;
 }
 
+.navicon {
+  justify-content: center;
+}
+
+.navbar-toggler {
+  color: var(--accent);
+}
+
 .active {
   opacity: 1;
   background: rgba(79, 82, 99, 0.9);

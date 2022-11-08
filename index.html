@@ -39,10 +39,22 @@
     </header>
     <main id="main">
       <!-- !NAVBAR -->
-      <nav class="nav-container">
+      <nav class="navbar navbar-expand-md nav-container">
         <div class="container-fluid">
-          <div class="navbar navbar-expand justify-content-end">
-            <ul class="nav navbar-nav">
+          <button
+            class="navbar-toggler d-lg-none d-flex justify-content-end"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="collapsibleNavId">
+            <ul class="navbar-nav text-center">
               <li class="nav-item">
                 <a class="nav-link" id="home" href="#landing">Home</a>
               </li>
@@ -58,46 +70,50 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link icon"
-                  href="https://github.com/mrdekraker"
-                  target="_blank"
-                  >&#xF3ED;</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link icon"
-                  href="https://www.instagram.com/mdek_strongdad/"
-                  target="_blank"
-                  >&#xF437;</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link icon"
-                  href="https://twitter.com/DekrakerMark"
-                  target="_blank"
-                  >&#xF5EF;</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link icon"
-                  href="https://www.linkedin.com/in/mark-dekraker-aa359528/"
-                  target="_blank"
-                  >&#xF472;</a
-                >
-              </li>
+              <div class="d-flex align-middle navicon">
+                <li class="nav-item">
+                  <a
+                    class="nav-link icon"
+                    href="https://github.com/mrdekraker"
+                    target="_blank"
+                    >&#xF3ED;</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link icon"
+                    href="https://www.instagram.com/mdek_strongdad/"
+                    target="_blank"
+                    >&#xF437;</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link icon"
+                    href="https://twitter.com/DekrakerMark"
+                    target="_blank"
+                    >&#xF5EF;</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link icon"
+                    href="https://www.linkedin.com/in/mark-dekraker-aa359528/"
+                    target="_blank"
+                    >&#xF472;</a
+                  >
+                </li>
+              </div>
             </ul>
-            <!-- sticky button -->
-            <div class="stickyBtn icon" role="button">
-              <a href="#landing" role="button">&#xF115;</a>
-            </div>
           </div>
         </div>
+
+        <!-- sticky button -->
+        <div class="stickyBtn icon" role="button">
+          <a href="#landing" role="button">&#xF115;</a>
+        </div>
       </nav>
+
       <!-- !ABOUT -->
       <section id="about" class="container text-center align-middle fade-up">
         <div class="row">
