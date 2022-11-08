@@ -1,4 +1,4 @@
-const workBtn = document.querySelector('.workBtn');
+const workBtn = document.querySelector('.button');
 const arrow = document.querySelector('#arrow');
 const about = document.querySelector(`#about`);
 const gap = document.querySelector('#gap');

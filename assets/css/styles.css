@@ -3,6 +3,7 @@
 
 :root {
   --background-color: #4f5263;
+  --alternate-background: #424553;
   --accent: #24f9f9;
   --links: #a1a7c8;
   --accent2: #6b9fed;
@@ -69,7 +70,7 @@ body {
   color: var(--accent);
 }
 
-.workBtn {
+.button {
   background-color: var(--background-color);
   color: var(--accent);
   border: none;
@@ -81,7 +82,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.workBtn:hover {
+.button:hover {
   background-color: var(--accent);
   color: var(--background-color);
   box-shadow: rgba(255, 255, 255, 0.1) 0px 8px 24px,
@@ -98,6 +99,10 @@ body {
 }
 
 /* !NAVBAR STYLES */
+nav {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
 .nav-container {
   background-color: var(--background-color);
   border-bottom: 2px solid var(--accent);
@@ -167,7 +172,8 @@ body {
 
 #about,
 #portfolio,
-#contact {
+#contact,
+#blog {
   background: var(--background-color);
   width: 100%;
 }
@@ -178,10 +184,7 @@ body {
 }
 
 #contact {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: var(--accent);
 }
 
@@ -330,4 +333,24 @@ footer p a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card {
+  background: var(--background-color);
+  color: var(--text-color-white);
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.card-title {
+  font-size: 2.2rem;
+}
+
+.blogbtn {
+  background-color: var(--alternate-background);
+  text-decoration: none;
 }
