@@ -1,216 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mark DeKraker Portfolio</title>
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins&display=swap"
-      rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- BOOTSTRAP -->
+    <!-- Bootstrap CSS v5.2.1 -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"></script>
-    <!-- BOOTSTRAP ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-
-    <!-- !MY STYLESHEET -->
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous" />
+    <!-- MY CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Mark DeKraker | Full Stack</title>
+    <link
+      rel="icon"
+      href="./assets/images/journal-code.svg"
+      type="image/icon type" />
   </head>
+
   <body>
-    <!-- !HEADER/NAVIGATION -->
     <header>
-      <div class="header-wrapper">
-        <div class="header-nameplate">
-          <h1>
-            <span id="initial">M</span><span>ark</span>
-            <span id="initial">D</span><span>eKraker</span>
-          </h1>
+      <!-- !LANDING -->
+      <div class="landing" id="landing">
+        <div class="hero">
+          <p>
+            Hi, my name is
+            <span class="mdek"><strong>Mark DeKraker</strong></span
+            >. <br />I am a Full-Stack Web Developer.
+          </p>
+          <button class="button" role="button" aria-label="Work Button">
+            View My Work <span class="icon" id="arrow">&#xF128;</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <!-- !NAVBAR -->
+      <nav class="nav-container">
+        <div class="container-fluid">
+          <div class="navbar navbar-expand justify-content-end">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" id="home" href="#landing">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link icon"
+                  href="https://github.com/mrdekraker"
+                  target="_blank"
+                  >&#xF3ED;</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link icon"
+                  href="https://www.instagram.com/mdek_strongdad/"
+                  target="_blank"
+                  >&#xF437;</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link icon"
+                  href="https://twitter.com/DekrakerMark"
+                  target="_blank"
+                  >&#xF5EF;</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link icon"
+                  href="https://www.linkedin.com/in/mark-dekraker-aa359528/"
+                  target="_blank"
+                  >&#xF472;</a
+                >
+              </li>
+            </ul>
+            <!-- sticky button -->
+            <div class="stickyBtn icon" role="button">
+              <a href="#landing" role="button">&#xF115;</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- !ABOUT -->
+      <section id="about" class="container text-center align-middle fade-up">
+        <div class="row">
+          <h2 class="namePlate">ABOUT</h2>
+        </div>
+        <div class="row container icon-section my-3 fade-up">
+          <div class="col-md">
+            CLEAN CODE <br />
+            <span class="icons" id="code-slash">&#xF683;</span>
+          </div>
+          <div class="col-md">
+            LEARNING <br /><span class="icons" id="book">&#xF194;</span>
+          </div>
+          <div class="col-md">
+            LOGIC <br /><span class="icons" id="puzzle">&#xF503;</span>
+          </div>
         </div>
 
-        <nav class="navbar navbar-expand-md">
-          <div class="container-fluid">
-            <button
-              id="nav-toggle-button"
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link" href="#about">About Me</a>
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-                <a class="nav-link" href="#contact">Contact</a>
-                <a href="https://www.instagram.com/mdek_strongdad">
-                  <i class="bi bi-instagram"> </i>
-                </a>
-                <a href="http://github.com/mrdekraker">
-                  <i class="bi bi-github"></i>
-                </a>
+        <div class="col-md-12 text-start mission fade-up">
+          <p>
+            const <span class="ethos">markDeKraker</span> = `I am a husband. I
+            am a father. I am a web developer. I am a musician.`<br />
+            function <span class="ethos">personalEthos</span>(virtue){
+            while(markDeKraker.age += 1 < life.length) { virtue.wisdom++;
+            virtue.love++; virtue.passion++;}
+          </p>
+        </div>
+        <div class="col-md-12 my-3 me">
+          <p class="text-start fade-up">
+            My name is Mark DeKraker (De-Cray-Ker). I'm married to a beautiful
+            woman named Kayla, and we have a daughter together. I am a Canadian
+            (<span class="leafs">Go Leafs!🇨🇦 🍁 🏒</span>) full stack web
+            developer who lives in Houston, TX. I have a background in
+            education, management, customer service, and music. I have a
+            lifelong love of music and puzzles, and I have a passion for problem
+            solving and creating. While I don't have a conventional background
+            in Comp Sci, I know I have the mental fortitude that is required to
+            learn and grow as a developer. I am a lifelong learner and I am
+            excited to be a part of the tech industry.
+          </p>
+          <div id="gap"></div>
+          <p class="text-start fade-up">
+            As a web developer, I have creative freedom to build and design apps
+            and websites that are both functional and beautiful. As a developer,
+            I also have the freedom to exercise my obsessive attention to detail
+            and my love of puzzles. I have discovered that the beautiful
+            amalgamation of puzzles, challenges, and design culminates in web
+            development.
+          </p>
+          <div id="gap"></div>
+          <p class="text-start fade-up">
+            I am currently enrolled at Rice University's Full Stack Web
+            Development program (projected graduation date February of 2023).
+            This website was built with everything I've learned from the course.
+            My experience with Rice University's bootcamp has been nothing short
+            of a challenging, rewarding experience.
+          </p>
+          <div id="gap"></div>
+          <p class="text-start fade-up">
+            I plan to continue updating this portfolio as I learn new techniques
+            and methodologies. Please feel free to contact me if you have any
+            questions. I would love to grow, learn, and collaborate with you.
+          </p>
+        </div>
+      </section>
+      <!-- !PORTFOLIO -->
+      <section id="portfolio" class="text-center fade-up">
+        <div class="row">
+          <h3 class="namePlate">PORTFOLIO</h3>
+          <p>Click the <span class="ethos">link</span> to go to the repo!</p>
+        </div>
+        <div class="panels container">
+          <div class="panel panel1 fade-up">
+            <p>Big</p>
+            <p class="tech">
+              <a
+                href="https://github.com/mrdekraker/SQL-big-brother"
+                target="_blank"
+                >SQL/Inquirer</a
+              >
+            </p>
+            <p>Brother</p>
+          </div>
+          <div class="panel panel2 fade-up">
+            <p>Zookeeper</p>
+            <p class="tech">
+              <a href="https://github.com/mrdekraker/zookeeper" target="_blank"
+                >SQL/EXPRESS</a
+              >
+            </p>
+            <p>Animals</p>
+          </div>
+          <div class="panel panel3 fade-up">
+            <p>Team</p>
+            <p class="tech">
+              <a
+                href="https://github.com/mrdekraker/team-teamwork"
+                target="_blank"
+                >Inquirer/Jest</a
+              >
+            </p>
+            <p>Teamwork</p>
+          </div>
+          <div class="panel panel4 fade-up">
+            <p>Whatever</p>
+            <p class="tech">
+              <a
+                href="https://github.com/mrdekraker/weather-app"
+                target="_blank"
+                >API Manipulation</a
+              >
+            </p>
+            <p>Weather</p>
+          </div>
+          <div class="panel panel5 fade-up">
+            <p>README</p>
+            <p class="tech">
+              <a
+                href="https://github.com/mrdekraker/readme-generator"
+                target="_blank"
+                >Inquirer</a
+              >
+            </p>
+            <p>GENERATOR</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- !BLOG -->
+      <section id="blog" class="container text-center fade-up my-5">
+        <div class="row">
+          <h3 class="namePlate">BLOG</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">MongoDB</h5>
+                <p class="card-text">
+                  Coming Soon: A series of blog posts about my discovery of
+                  MongoDB.
+                </p>
+                <a href="#" class="blogbtn button">MongoDB</a>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
-
-    <!-- !HERO SECTION -->
-    <section>
-      <div class="wrapper hero">
-        <div class="hero-content">
-          <p>
-            Hi, my name is
-            <br />
-            <span class="lg-text name">Mark DeKraker.</span>
-            <br />
-            <span class="md-text me">I am a</span>
-            <br />
-            <span class="sm-text">
-              Developer. Husband. Father. Musician. Athlete.
-            </span>
-            <br />
-            <span class="md-text me"> Software Skills </span>
-            <br />
-            <span class="sm-text">HTML, CSS. More skills coming soon.</span>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- !MAIN CONTENT -->
-    <article id="about">
-      <div class="wrapper">
-        <div class="about-wrapper">
-          <div class="bio-copy">
-            <div class="nameplate">
-              <h1>About Me</h1>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">React.js</h5>
+                <p class="card-text">
+                  Coming Soon: A series of blog posts about my discovery of
+                  React.js.
+                </p>
+                <a href="#" class="blogbtn button">React</a>
+              </div>
             </div>
-            <p>
-              My name is Mark DeKraker (De-Cray-Ker). I’m married to a beautiful
-              woman named Kayla, and we have a daughter together. I am a
-              Canadian (Go Leafs!🇨🇦 🍁 🏒 ) web developer who lives in Houston,
-              TX. I am classically trained in piano and violin, and I play
-              guitar for worship at my church. For the last several years, I
-              have a been an elementary school music teacher, and I am working
-              towards changing careers to better support my growing family.
-            </p>
-            <br />
-            <p>
-              I graduated from Liberty University Online with an
-              Interdisciplinary degree in Audio Engineering and Web Design. I
-              love puzzles, challenges, and design, and have discovered a
-              beautiful amalgamation culminating in web design.
-            </p>
-            <br />
-            <p>
-              I am currently enrolled at Rice University’s Full Stack Web
-              Development program (projected graduation date February of 2023).
-              This website was built with everything I’ve learned from the
-              course. My experience with Rice University’s bootcamp has been
-              nothing short of a challenging, rewarding experience.
-            </p>
-            <br />
-            <p>
-              I plan to continue updating this portfolio as I learn new
-              techniques and methodologies. Please feel free to contact me if
-              you have any questions.
-            </p>
           </div>
-          <div class="img-wrap">
-            <img
-              class="about-img"
-              src="./assets/images/mdek.jpeg"
-              alt="picture of Mark playing guitar" />
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Gatsby.js</h5>
+                <p class="card-text">
+                  Coming Soon: A series of blog posts about my discovery of
+                  Gatsby.js.
+                </p>
+                <a href="#" class="blogbtn button">Gatsby</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </article>
+      </section>
 
-    <!-- !PORTFOLIO -->
-    <section id="portfolio">
-      <div class="wrapper">
-        <div class="nameplate port-nameplate">
-          <h1>Portfolio</h1>
+      <!-- !CONTACT -->
+      <section id="contact" class="container text-center fade-up my-5">
+        <div class="row">
+          <h3 class="namePlate">CONTACT</h3>
         </div>
-        <ul class="boxes">
-          <li class="box project1">
-            <div class="box-info big-box">
-              <a href="https://mrdekraker.github.io/horiseon-marketing/">
-                <h2>Horiseon Marketing</h2>
-                <h3>Code Refactoring</h3>
-              </a>
-            </div>
-          </li>
-          <li class="box project2">
-            <div class="box-info">
-              <a href="https://deadseal001.github.io/movie-search-app/">
-                <h2>Project 1</h2>
-                <h3>Movie Search App</h3>
-              </a>
-            </div>
-          </li>
-          <li class="box project3">
-            <div class="box-info">
-              <!-- <h2>Coming Soon</h2>
-              <h3>Coming Soon</h3> -->
-            </div>
-          </li>
-          <li class="box project4">
-            <div class="box-info">
-              <!-- <h2>Coming Soon</h2>
-              <h3>Coming Soon</h3> -->
-            </div>
-          </li>
-          <li class="box project5">
-            <div class="box-info">
-              <!-- <h2>Coming Soon</h2>
-              <h3>Coming Soon</h3> -->
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+        <div class="contact-icons">
+          <div class="col-md-1">
+            <a
+              class="nav-link icon"
+              href="https://github.com/mrdekraker"
+              target="_blank"
+              >&#xF3ED;</a
+            >
+          </div>
+          <div class="col-md-1">
+            <a
+              class="nav-link icon"
+              href="https://www.instagram.com/mdek_strongdad/"
+              target="_blank"
+              >&#xF437;</a
+            >
+          </div>
+          <div class="col-md-1">
+            <a
+              class="nav-link icon"
+              href="https://twitter.com/DekrakerMark"
+              target="_blank"
+              >&#xF5EF;</a
+            >
+          </div>
+          <div class="col-md-1">
+            <a
+              class="nav-link icon"
+              href="https://www.linkedin.com/in/mark-dekraker-aa359528/"
+              target="_blank"
+              >&#xF472;</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <!-- !FOOTER -- CONTACT ME-->
-    <footer id="contact">
-      <div class="footer-wrapper">
-        <div class="nameplate">
-          <h1>Contact</h1>
+    <!-- !FOOTER -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center my-5">
+            <p>&copy; 2022 Mark DeKraker</p>
+            <p>
+              <a
+                href="https://mrdekraker.github.io/javascript-100/003-omgdad/omgdad.html"
+                target="_blank"
+                >Click the not so secret link!</a
+              >
+            </p>
+          </div>
         </div>
-        <ul class="footer-links">
-          <li>
-            <a href="mailto:mrdekraker@gmail.com">Email Me</a>
-          </li>
-          <li>
-            <a href="http://github.com/mrdekraker">GitHub</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/mdek_strongdad">Instagram</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/mark-dekraker-aa359528/">
-              LinkedIn
-            </a>
-          </li>
-        </ul>
       </div>
     </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"></script>
+
+    <!-- MY JS -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
