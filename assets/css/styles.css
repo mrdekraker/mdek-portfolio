@@ -39,6 +39,7 @@ body {
   line-height: 0;
 }
 
+/* LANDING STYLING */
 .landing {
   height: 100vh;
   width: 100%;
@@ -51,7 +52,6 @@ body {
   color: rgb(0, 32, 91);
 }
 
-/* Center the Hero */
 .hero {
   position: absolute;
   top: 50%;
@@ -66,7 +66,6 @@ body {
 }
 
 .mdek {
-  /* color: var(--accent); */
   color: var(--accent);
 }
 
@@ -156,7 +155,7 @@ nav {
   text-decoration: none;
 }
 
-/* !ABOUT ME */
+/* !MAIN SECTIONS */
 .namePlate {
   font-weight: bold;
   font-size: 3rem;
@@ -212,7 +211,6 @@ nav {
 #code-slash,
 #book,
 #puzzle {
-  /* font-weight: bold; */
   font-size: 3em;
   color: var(--accent);
 }
@@ -229,7 +227,6 @@ nav {
   transform: translate3d(0, 0, 0);
 }
 
-/* PANEL */
 .panels {
   min-height: 100vh;
   overflow: hidden;
